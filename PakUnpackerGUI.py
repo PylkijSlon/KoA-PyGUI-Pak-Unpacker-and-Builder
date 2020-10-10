@@ -27,7 +27,7 @@ def pak_list():
 
     print(pak_contents)
 
-    with open(pak_list_file, 'w') as f:
+    with open(pak_list_file, 'w', encoding='utf-8') as f:
         f.write(pak_contents)
     
 #The Unpack Function
