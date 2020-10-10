@@ -1,13 +1,13 @@
 # KoA PyGUI Pak Unpacker and Builder
 
-Download the executables and run.
+Download the executables and run. The executables are Windows only at this time.
 
-# To run the scripts on Windows:
+### To run the scripts on Windows:
 
 Download the scripts<br/>
 Run cmd>pip3 install PySimpleGUI
 
-# To run the scripts on Ubuntu:
+### To run the scripts on Ubuntu:
 
-pip3 install PySimpleGUI to install PySimpleGUI<br/>
-sudo apt install python3-tk to install tkinter for PySimpleGUI
+`pip3 install PySimpleGUI` to install PySimpleGUI<br/>
+`sudo apt install python3-tk` to install tkinter for PySimpleGUI
