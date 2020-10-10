@@ -20,7 +20,7 @@ def input_list_file():
 
     folder_list = os.listdir(folder)
 
-    with open(input_list, 'w') as f:
+    with open(input_list, 'w', encoding='utf-8') as f:
         for item in folder_list:
             f.write(folder + "%s\n" % item)
     
