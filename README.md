@@ -5,7 +5,7 @@ Download the executables and run. The executables are Windows only at this time.
 ### To run the scripts on Windows:
 
 Download the scripts<br/>
-Run cmd>pip3 install PySimpleGUI
+Run cmd>`pip3 install PySimpleGUI` to install PySimpleGUI
 
 ### To run the scripts on Ubuntu:
 
