@@ -5,7 +5,8 @@ import os
 sg.theme('Dark Blue 3')
 
 #The Window
-layout = [  [sg.Text("Folder to be Packed", size=(15, 1)), sg.InputText(), sg.FolderBrowse()],
+layout = [  [sg.Text("pakfilebuilder.exe", size=(15, 1)), sg.InputText(), sg.FileBrowse()],
+            [sg.Text("Folder to be Packed", size=(15, 1)), sg.InputText(), sg.FolderBrowse()],
             [sg.Text("Pak File Name", size =(15, 1)), sg.InputText()],
             [sg.Button("Pack"), sg.Button("Cancel")]  ]
 
@@ -14,8 +15,8 @@ window = sg.Window(".Pak a Folder", layout)
 #InputListFile
 
 def input_list_file():
-    folder = values[0] + "/"
-    input_list = values[1] + ".txt"
+    folder = values[1] + "/"
+    input_list = values[2] + ".txt"
 
     folder_list = os.listdir(folder)
 
@@ -26,10 +27,11 @@ def input_list_file():
 #Pak Builder
 
 def pak_build():
-    input_list = values[1] + ".txt"
-    pak = values[1] + ".pak"
+    builder = values[0]
+    input_list = values[2] + ".txt"
+    pak = values[2] + ".pak"
 
-    subprocess.Popen(['pakfilebuilder.exe', "-c", input_list, pak],
+    subprocess.Popen([builder, "-c", input_list, pak],
     stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
 #Events
