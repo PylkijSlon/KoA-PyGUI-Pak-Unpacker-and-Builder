@@ -1,3 +1,5 @@
+This version is no longer being actively developed. Instead go to: https://github.com/PylkijSlon/KoA-DDS-Encoder-GUI
+
 # KoA PyGUI Pak Unpacker and Builder
 
 Download the executables and run. The executables are Windows only at this time.
